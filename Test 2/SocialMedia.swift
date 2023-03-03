@@ -10,11 +10,6 @@ import SwiftUI
 struct SocialMedia: View {
     var body: some View {
         VStack {
-            Text("----------Reach Us at----------")
-                .font(.system(size: 18))
-                .bold()
-                .padding(.horizontal)
-            
             HStack {
                 Text("")
                 
@@ -61,6 +56,9 @@ struct SocialMedia: View {
             }
             
         }
+        .modifier(CenterModifier())
+        .background(Color(#colorLiteral(red: 0.9952186942, green: 0.9027745128, blue: 0.8957005143, alpha: 1)))
+        
     }
 }
 

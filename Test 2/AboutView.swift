@@ -25,7 +25,11 @@ struct AboutView: View {
                 
                 MediaButton()
          
-                Spacer()
+                SocialMedia()
+                
+                PrivacyButton()
+                
+                
             }.padding(20)
         }.background(Color(#colorLiteral(red: 0.9952186942, green: 0.9027745128, blue: 0.8957005143, alpha: 1)))
       
@@ -46,7 +50,7 @@ struct TrustButton: View {
             
             Image("aboutPic1")
             
-        }.sheet(isPresented: self.$showContent) { FAQsView() }
+        }.sheet(isPresented: self.$showContent) { Trust() }
             .padding()
     }
 }
@@ -59,7 +63,7 @@ struct MissionButton: View {
             
             Image("aboutPic2")
             
-        }.sheet(isPresented: self.$showContent) { AboutView() }
+        }.sheet(isPresented: self.$showContent) { Mission() }
     }
 }
 
@@ -71,7 +75,7 @@ struct IdeologyButton: View {
             
             Image("aboutPic3")
             
-        }.sheet(isPresented: self.$showContent) { AboutView() }
+        }.sheet(isPresented: self.$showContent) { Ideology() }
             .padding()
     }
 }
@@ -80,11 +84,17 @@ struct MediaButton: View {
     @State var showContent = false
     
     var body: some View {
-        Button(action: { self.showContent.toggle() }) {
+        Button(action: {
             
+            if let yourURL = URL(string: "https://sahibbandgi.org/sahibBandgi-mediaCoverage.htm") {
+                UIApplication.shared.open(yourURL, options: [:], completionHandler: nil)
+            }
+            
+        }) {
             Image("aboutPic4")
             
-        }.sheet(isPresented: self.$showContent) { AboutView() }
+        }
+
     }
 }
 

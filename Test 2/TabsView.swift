@@ -23,7 +23,7 @@ struct TabsView: View {
                     Text("Home")
                 }
          
-            VideoView()
+            VideosView()
                 .font(.system(size: 30, weight: .bold, design: .rounded))
                 .tabItem {
                     Image(systemName: "video.circle.fill")

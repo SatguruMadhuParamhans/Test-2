@@ -13,7 +13,7 @@ struct Home: View {
     var body: some View {
         ScrollView{
             ScrollView(.horizontal){
-                HStack(spacing: 10){
+                HStack(spacing: 15){
                     
                     AboutUsButton()
                     
@@ -24,7 +24,8 @@ struct Home: View {
                 }
             }
             
-            Text("We warmly welcome you to explore the only sect in the world which guarantees you TOTAL INNER PEACE and PERMANENT SALVATION . In today's world everyone is so focussed on their body's needs that they have forgotten the real reason for their birth as human beings i.e. to attain salvation. This has lead to a very SRESSFUL lifestyle. Come explore a life free from all PRESSURES, STRESS, TENSIONS, DECEIT, ANGER, ANXIETY, LUST etc.")
+            TextView(text: "We warmly welcome you to explore the only sect in the world which guarantees you TOTAL INNER PEACE and PERMANENT SALVATION. In today's world everyone is so focussed on their body's needs that they have forgotten the real reason for their birth as human beings i.e. to attain salvation. This has lead to a very STRESSFUL lifestyle. Come explore a life free from all PRESSURES, STRESS, TENSIONS, DECEIT, ANGER, ANXIETY, LUST etc.")
+                .frame(height: 260)
                 .padding(20)
                 .background()
                 .overlay(RoundedRectangle(cornerRadius: 15)
@@ -33,7 +34,10 @@ struct Home: View {
                 
             
             SocialMedia()
-                .padding(.bottom, 80)
+//                .padding(.bottom, 80)
+            
+            PrivacyButton()
+                .padding(.bottom, 10)
             
         }.background(Color(#colorLiteral(red: 0.9952186942, green: 0.9027745128, blue: 0.8957005143, alpha: 1)))
             .ignoresSafeArea()

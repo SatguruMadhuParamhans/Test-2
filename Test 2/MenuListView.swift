@@ -21,8 +21,6 @@ struct MenuListView: View {
                     .bold()
                 KabirButton()
                 
-//                SatguruButton()
-                
                 FAQsButton()
                 
                 ContactsButton()
@@ -33,6 +31,9 @@ struct MenuListView: View {
                 
                 Watch_FollowButton()
                 
+                SocialMedia()
+                
+                PrivacyButton()
                 
                 
                 Spacer()
@@ -71,20 +72,7 @@ struct KabirButton: View {
             
             Image("menuPic1")
             
-        }.sheet(isPresented: self.$showContent) { AboutView() }
-    }
-}
-
-struct SatguruButton: View {
-    @State var showContent = false
-    
-    var body: some View {
-        Button(action: { self.showContent.toggle() }) {
-            
-            Image("menuPic2")
-            
-        }.sheet(isPresented: self.$showContent) { AboutView() }
-            .padding()
+        }.sheet(isPresented: self.$showContent) { KabirSahibView() }
     }
 }
 
@@ -96,20 +84,7 @@ struct ContactsButton: View {
             
             Image("menuPic4")
             
-        }.sheet(isPresented: self.$showContent) { AboutView() }
-    }
-}
-
-struct GuruVsSatguruButton: View {
-    @State var showContent = false
-    
-    var body: some View {
-        Button(action: { self.showContent.toggle() }) {
-            
-            Image("menuPic5")
-            
-        }.sheet(isPresented: self.$showContent) { AboutView() }
-            .padding()
+        }.sheet(isPresented: self.$showContent) { ContactsView() }
     }
 }
 
@@ -119,21 +94,21 @@ struct NiranjanVsParamButton: View {
     var body: some View {
         Button(action: { self.showContent.toggle() }) {
             
-            Image("menuPic6")
+            Image("menuPic5")
             
-        }.sheet(isPresented: self.$showContent) { AboutView() }
+        }.sheet(isPresented: self.$showContent) { NiranjanVsParampurushView() }
     }
 }
 
-struct AboutButton: View {
+struct GuruVsSatguruButton: View {
     @State var showContent = false
     
     var body: some View {
         Button(action: { self.showContent.toggle() }) {
             
-            Image("menuPic2")
+            Image("menuPic6")
             
-        }.sheet(isPresented: self.$showContent) { AboutView() }
+        }.sheet(isPresented: self.$showContent) { GuruVsSatguruView() }
             .padding()
     }
 }
@@ -146,7 +121,7 @@ struct Watch_FollowButton: View {
             
             Image("menuPic7")
             
-        }.sheet(isPresented: self.$showContent) { AboutView() }
+        }.sheet(isPresented: self.$showContent) { WatchFollowView() }
             .padding()
     }
 }

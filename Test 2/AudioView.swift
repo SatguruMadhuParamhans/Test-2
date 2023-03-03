@@ -11,7 +11,7 @@ struct AudioView: View {
     var body: some View {
         ScrollView{
             VStack{
-                Text("Downloads")
+                Text("Audios")
                     .font(.largeTitle)
                     .bold()
                 
@@ -20,6 +20,12 @@ struct AudioView: View {
                 BhajansButton()
                 
                 BhajanPlaylistButton()
+                
+                Spacer(minLength: 100)
+                
+                SocialMedia()
+                
+                PrivacyButton()
                 
                 
                 
