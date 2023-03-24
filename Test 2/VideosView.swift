@@ -19,7 +19,7 @@ struct VideosView: View {
                 
                 ShortVideoButton()
                 
-                Spacer(minLength: 300)
+                Spacer(minLength: 250)
                 
                 SocialMedia()
                 

@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct SocialEndeavoursView: View {
-    
-    private var noOfImages = 5
+    @Environment(\.presentationMode) var presentationMode
+    private var noOfImages = 14
     private let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
     @State private var currentIndex = 0
     
@@ -34,7 +34,7 @@ struct SocialEndeavoursView: View {
                 
                 //Slideshow
                 TabView(selection: $currentIndex) {
-                    ForEach(1..<noOfImages) { num in
+                    ForEach(1..<14) { num in
                         Image("social_endeavors_app"+"\(num)")
                             .resizable()
                             .tag(num)
@@ -52,7 +52,20 @@ struct SocialEndeavoursView: View {
                 PrivacyButton()
                 
             }
-        }.background((Color(#colorLiteral(red: 0.9952186942, green: 0.9027745128, blue: 0.8957005143, alpha: 1))))
+        }.padding(20)
+            .overlay(
+                Button(action: {
+                self.presentationMode.wrappedValue.dismiss()
+            }) {
+                Image(systemName: "x.circle.fill")
+                    .padding()
+                    .bold()
+                    .foregroundColor(.orange)
+                    .font(.system(size: 30))
+                    .shadow(color: Color.black.opacity(0.9), radius: 5, x: 5, y: 5)
+            }.padding(.trailing)
+                ,alignment: .topTrailing
+            ).background((Color(#colorLiteral(red: 0.9952186942, green: 0.9027745128, blue: 0.8957005143, alpha: 1))))
             .ignoresSafeArea(.all)
     }
 }
@@ -68,8 +81,8 @@ struct SocialText1: View{
     var body: some View {
         LazyVStack{
             
-            TextView(text: "Sahibji is very benevolent and kind hearted. He has always been in the forefront of any humanitarian aid in times of crisis. Our organization fed approximately 10,000 people a day during two COVID-19 lockdowns in 2020-21. We have always extended helping hand to the society at large in times of need. We regularly arrange marriages of poor disciples who cannot afford the expenses besides providing free medical aid to needy at our Ashrams.")
-                .frame(height: 250)
+            Text("Sahibji is very benevolent and kind hearted. He has always been in the forefront of any humanitarian aid in times of crisis. Our organization fed approximately 10,000 people a day during two COVID-19 lockdowns in 2020-21. We have always extended helping hand to the society at large in times of need. We regularly arrange marriages of poor disciples who cannot afford the expenses besides providing free medical aid to needy at our Ashrams.")
+            
         }
             .padding()
             .background()

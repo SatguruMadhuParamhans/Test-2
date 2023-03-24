@@ -24,21 +24,18 @@ struct TabsView: View {
                 }
          
             VideosView()
-                .font(.system(size: 30, weight: .bold, design: .rounded))
                 .tabItem {
                     Image(systemName: "video.circle.fill")
                     Text("Videos")
                 }
          
             AudioView()
-                .font(.system(size: 30, weight: .bold, design: .rounded))
                 .tabItem {
                     Image(systemName: "music.note")
                     Text("Audios")
                 }
             
             DownloadView()
-                .font(.system(size: 30, weight: .bold, design: .rounded))
                 .tabItem {
                     Image(systemName: "arrow.down.circle")
                     Text("Downloads")
@@ -50,6 +47,7 @@ struct TabsView: View {
                     Text("Menu")
                 }
         }.accentColor(.red)
+            .background(Color.white)
 
     }
 }

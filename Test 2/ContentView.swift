@@ -21,7 +21,7 @@ struct ContentView: View {
                 Image("app_logo")
                     .resizable()
                     .frame(width: 330, height: 35)
-                    .padding(.top,50)
+                    .padding(.top,70)
                 
                 TabsView()
             }.background(Color(#colorLiteral(red: 0.9952186942, green: 0.9027745128, blue: 0.8957005143, alpha: 1)))
@@ -63,22 +63,6 @@ struct VideoView: UIViewRepresentable {
     }
 }
 
-//Justify text
-struct TextView: UIViewRepresentable {
-    var text: String
-    
-    func makeUIView(context: Context) -> UITextView {
-        let textView = UITextView()
-        textView.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.body)
-        textView.textAlignment = .justified
-        return textView
-    }
-    
-    func updateUIView(_ uiView: UITextView, context: Context) {
-        uiView.text = text
-    }
-}
-
 //Privacy Button
 
 struct PrivacyButton: View {
@@ -89,18 +73,15 @@ struct PrivacyButton: View {
         HStack{
             
             Text("© All rights reserved.")
-                .padding(.bottom, 20)
             
-            Button(action: {
+            Button(action: { self.showContent.toggle() }) {
                 
-                if let yourURL = URL(string: "https://sahibbandgi.org/sahibBandgi-videoSatsang.htm") {
-                    UIApplication.shared.open(yourURL, options: [:], completionHandler: nil)
-                }
+                Text("Privacy Policy")
                 
-            }) {
-                Text("  Privacy Policy")
-                
-            }.padding(.bottom, 20)
-        }
+                }.sheet(isPresented: self.$showContent) { PrivacyPolicyView() }
+
+        }.padding(.bottom, 25)
     }
 }
+
+

@@ -22,9 +22,9 @@
 		0A45861029ABB53F0053A827 /* WatchFollowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A45860F29ABB53F0053A827 /* WatchFollowView.swift */; };
 		0A54906929B0EC1B0040E149 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54906829B0EC1B0040E149 /* SplashScreenView.swift */; };
 		0A552EBD29A3CDAF00D5B13D /* SocialMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A552EBC29A3CDAF00D5B13D /* SocialMedia.swift */; };
+		0A55AD5D29B7941000EED3CA /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55AD5C29B7941000EED3CA /* PrivacyPolicyView.swift */; };
 		0A56E325299D09BC00C268FE /* MenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A56E324299D09BC00C268FE /* MenuListView.swift */; };
 		0A56E327299D297C00C268FE /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A56E326299D297C00C268FE /* TabsView.swift */; };
-		0A5A116F29A8FA4C009756B5 /* Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A116E29A8FA4C009756B5 /* Testing.swift */; };
 		0A5A117129A9085B009756B5 /* Trust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A117029A9085B009756B5 /* Trust.swift */; };
 		0A5A117329A90871009756B5 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A117229A90870009756B5 /* Mission.swift */; };
 		0A5A117529A90889009756B5 /* Ideology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A117429A90889009756B5 /* Ideology.swift */; };
@@ -74,9 +74,9 @@
 		0A45860F29ABB53F0053A827 /* WatchFollowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFollowView.swift; sourceTree = "<group>"; };
 		0A54906829B0EC1B0040E149 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		0A552EBC29A3CDAF00D5B13D /* SocialMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMedia.swift; sourceTree = "<group>"; };
+		0A55AD5C29B7941000EED3CA /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 		0A56E324299D09BC00C268FE /* MenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListView.swift; sourceTree = "<group>"; };
 		0A56E326299D297C00C268FE /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
-		0A5A116E29A8FA4C009756B5 /* Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testing.swift; sourceTree = "<group>"; };
 		0A5A117029A9085B009756B5 /* Trust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trust.swift; sourceTree = "<group>"; };
 		0A5A117229A90870009756B5 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		0A5A117429A90889009756B5 /* Ideology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ideology.swift; sourceTree = "<group>"; };
@@ -138,13 +138,13 @@
 			isa = PBXGroup;
 			children = (
 				0A2E532C2991480E00ECC7C6 /* Test_2App.swift */,
+				0A55AD5C29B7941000EED3CA /* PrivacyPolicyView.swift */,
 				0A54906829B0EC1B0040E149 /* SplashScreenView.swift */,
 				0A2E532E2991480E00ECC7C6 /* ContentView.swift */,
 				0A5A117029A9085B009756B5 /* Trust.swift */,
 				0A5A117229A90870009756B5 /* Mission.swift */,
 				0A5A117429A90889009756B5 /* Ideology.swift */,
 				0A56E326299D297C00C268FE /* TabsView.swift */,
-				0A5A116E29A8FA4C009756B5 /* Testing.swift */,
 				0A615FA129A4F50800ABA13A /* DownloadView.swift */,
 				0A615F9F29A4F49A00ABA13A /* AudioView.swift */,
 				0A615F9D29A4F40800ABA13A /* VideosView.swift */,
@@ -333,6 +333,7 @@
 				0A45860829ABB4080053A827 /* KabirSahibView.swift in Sources */,
 				0A2E532F2991480E00ECC7C6 /* ContentView.swift in Sources */,
 				0A2E532D2991480E00ECC7C6 /* Test_2App.swift in Sources */,
+				0A55AD5D29B7941000EED3CA /* PrivacyPolicyView.swift in Sources */,
 				0A74AFBA299BBA8A00D34DFE /* AboutView.swift in Sources */,
 				0A5A117129A9085B009756B5 /* Trust.swift in Sources */,
 				0A615FA029A4F49A00ABA13A /* AudioView.swift in Sources */,
@@ -342,7 +343,6 @@
 				0A45860C29ABB4E30053A827 /* NiranjanVsParampurushView.swift in Sources */,
 				0A5A117329A90871009756B5 /* Mission.swift in Sources */,
 				0A45861029ABB53F0053A827 /* WatchFollowView.swift in Sources */,
-				0A5A116F29A8FA4C009756B5 /* Testing.swift in Sources */,
 				0A615F9E29A4F40800ABA13A /* VideosView.swift in Sources */,
 				0A552EBD29A3CDAF00D5B13D /* SocialMedia.swift in Sources */,
 			);

@@ -21,8 +21,12 @@ struct DownloadView: View {
                     
                     CalendarButton()
                     
-                    
-                    Spacer()
+                    Spacer(minLength: 100)
+
+                    SocialMedia()
+                        
+                    PrivacyButton()
+                
                 }.padding(20)
             }.background(Color(#colorLiteral(red: 0.9952186942, green: 0.9027745128, blue: 0.8957005143, alpha: 1)))
     }
